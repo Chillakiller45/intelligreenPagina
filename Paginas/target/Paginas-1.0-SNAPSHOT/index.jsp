@@ -10,8 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="resources/css/materialize.css"/>
+        <script src="resources/js/jquery-3.3.1.min.js"></script>
+        <script src="resources/js/materialize.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="templates/header.jsp" %>
     </body>
 </html>
