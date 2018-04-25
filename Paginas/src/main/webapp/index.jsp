@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Inicio</title>
         <link rel="stylesheet" href="resources/css/materialize.css"/>
         <script src="resources/js/jquery-3.3.1.min.js"></script>
         <script src="resources/js/materialize.js"></script>
