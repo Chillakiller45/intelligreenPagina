@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicio</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/materialize.css"/>
         <script src="resources/js/jquery-3.3.1.min.js"></script>
         <script src="resources/js/materialize.js"></script>
