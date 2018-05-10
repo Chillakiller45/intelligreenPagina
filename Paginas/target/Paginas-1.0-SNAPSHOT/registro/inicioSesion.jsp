@@ -38,7 +38,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field col s12 center-align">
+                            <button class="waves-effect waves-green btn btn-large green darken-2" type="submit">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                    <div class="col s12 center">
+                        <br>
+                        <a href="ServletRegistrarUsuario" class="center-align">¿No tienes una cuenta? Crea una!!!</a>
+                    </div>
+                </div>
             </form>
+            <div class="container">
+                
+            </div>
+            
         </div>
     </body>
 </html>

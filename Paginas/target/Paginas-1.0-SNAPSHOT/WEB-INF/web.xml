@@ -8,6 +8,10 @@
         <servlet-name>ServletInicioSesion</servlet-name>
         <servlet-class>com.app.intelligreen.paginas.servlets.ServletInicioSesion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletRegistrarUsuario</servlet-name>
+        <servlet-class>com.app.intelligreen.paginas.servlets.ServletRegistrarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletIndex</servlet-name>
         <url-pattern>/ServletIndex</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>ServletInicioSesion</servlet-name>
         <url-pattern>/ServletInicioSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRegistrarUsuario</servlet-name>
+        <url-pattern>/ServletRegistrarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
