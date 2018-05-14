@@ -43,7 +43,9 @@ public class ServletRegistrarUsuario extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        
+        String nombreUsuario = request.getParameter("textNombreUsuario");
+        String correo = request.getParameter("textCorreoElectronico");
+        String contra = request.getParameter("textClave");
     }
 
 }

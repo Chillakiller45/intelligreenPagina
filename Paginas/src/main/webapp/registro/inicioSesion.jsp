@@ -25,7 +25,7 @@
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
                             <input name="textNombreUsuario" id="textNombreUsuario" type="text" class="autocomplete">
-                            <label for="textNombreUsuario">Nombre de Usuario:</label>
+                            <label for="textNombreUsuario" class="flow-text">Nombre de Usuario:</label>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
                             <input class="validate" name="textClaveUsuario" id="textClaveUsuario" type="password">
-                            <label for="textClaveUsuario">Clave de Usuario:</label>
+                            <label for="textClaveUsuario" class="flow-text">Clave de Usuario:</label>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="col s12 center">
                         <br>
-                        <a href="ServletRegistrarUsuario" class="center-align">¿No tienes una cuenta? Crea una!!!</a>
+                        <a href="ServletRegistrarUsuario" class="center-align flow-text">¿No tienes una cuenta? Crea una!!!</a>
                     </div>
                 </div>
             </form>
