@@ -16,4 +16,5 @@ import javax.persistence.EntityManager;
 public interface IDaoUsuarios {
     public List<Usuarios> findAll(EntityManager em);
     public Usuarios findByCorreo(EntityManager em,String correo);
+    public void altas(EntityManager em,Usuarios usuario);
 }

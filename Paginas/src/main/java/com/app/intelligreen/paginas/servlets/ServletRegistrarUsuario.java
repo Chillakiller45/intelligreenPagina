@@ -6,6 +6,8 @@
 
 package com.app.intelligreen.paginas.servlets;
 
+import com.app.intelligreen.ejb.EjbUsuarios;
+import com.app.intelligreen.paginas.entity.Usuarios;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -46,6 +48,13 @@ public class ServletRegistrarUsuario extends HttpServlet {
         String nombreUsuario = request.getParameter("textNombreUsuario");
         String correo = request.getParameter("textCorreoElectronico");
         String contra = request.getParameter("textClave");
+        Usuarios usuario = new Usuarios();
+        usuario.setClave(contra);
+        usuario.setCorreoMail(correo);
+        usuario.setNombreUsuario(nombreUsuario);
+        EjbUsuarios ejbUsuarios = new EjbUsuarios();
+        ejbUsuarios.altas(usuario);
+        request.getRequestDispatcher("/registro/registroExitoso").forward(request, response);
     }
 
 }

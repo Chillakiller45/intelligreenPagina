@@ -58,4 +58,24 @@ public class EjbUsuarios {
         }
         return usuario;
     }
+    public void altas(Usuarios usuario){
+        emf = Persistence.createEntityManagerFactory("IntelligreenPU");
+        em = emf.createEntityManager();
+        et = em.getTransaction();
+        try{
+            DaoUsuarios daoUsuarios = new DaoUsuarios();
+            et.begin();
+            daoUsuarios.altas(em,usuario);
+            et.commit();
+        }catch(Exception ex){
+            System.out.println("Error " + ex);
+            ex.printStackTrace();
+        }finally{
+            et = null;
+            em.close();
+            em = null;
+            emf.close();
+            emf = null;
+        }
+    }
 }

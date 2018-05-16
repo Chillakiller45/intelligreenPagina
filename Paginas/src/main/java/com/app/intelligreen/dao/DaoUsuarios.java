@@ -28,6 +28,11 @@ public class DaoUsuarios implements IDaoUsuarios{
         query.setParameter("correoMail", correo);
         return (Usuarios) query.getSingleResult();
     }
+
+    @Override
+    public void altas(EntityManager em, Usuarios usuario) {
+        em.persist(usuario);
+    }
     
     
     
