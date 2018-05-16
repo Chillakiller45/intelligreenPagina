@@ -53,8 +53,14 @@ public class ServletRegistrarUsuario extends HttpServlet {
         usuario.setCorreoMail(correo);
         usuario.setNombreUsuario(nombreUsuario);
         EjbUsuarios ejbUsuarios = new EjbUsuarios();
-        ejbUsuarios.altas(usuario);
-        request.getRequestDispatcher("/registro/registroExitoso").forward(request, response);
+        if(ejbUsuarios.findByCorreo(correo) != null){
+            request.setAttribute("mensaje", "El correo ya ha sido previamente registrado");
+        }else{
+            request.setAttribute("mensaje", "Registro Exitoso");
+            ejbUsuarios.altas(usuario);
+        }
+        
+        request.getRequestDispatcher("/registro/registroUsuario").forward(request, response);
     }
 
 }

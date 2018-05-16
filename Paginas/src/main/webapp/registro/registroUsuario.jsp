@@ -39,6 +39,13 @@
                 }
             }
         </script>
+        <% 
+        if(request.getAttribute("mensaje") != null){
+            %>
+            <script>M.toast({html: '<%= request.getAttribute("mensaje") %>'},500);</script>
+            <%
+        }
+        %>
     </head>
     <body>
         <%@include file="../templates/header.jsp" %>
