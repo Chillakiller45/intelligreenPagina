@@ -60,7 +60,7 @@ public class ServletRegistrarUsuario extends HttpServlet {
             ejbUsuarios.altas(usuario);
         }
         
-        request.getRequestDispatcher("/registro/registroUsuario").forward(request, response);
+        request.getRequestDispatcher("/registro/registroUsuario.jsp").forward(request, response);
     }
 
 }
